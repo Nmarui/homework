@@ -9,11 +9,12 @@ var data = [
 ];
 
 var container = document.getElementById('example');
+var Handsontable;
 var hot = new Handsontable(container, {
     data: data,
     rowHeaders: false,
     colHeaders: ["语言名称","排名","升或降","变化幅度"],
-    colWidths: 160,
+    colWidths: 250,
     
     cell: [
         {row: 0, col: 0, className: "htCenter htMiddle"}, 
